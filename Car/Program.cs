@@ -26,6 +26,7 @@ namespace Car
             car.Speed(speed);
             car.Weihgt(weight);
             car.Wheels(wheels);
+            car.Action();
             Console.ReadKey();
         }
     }

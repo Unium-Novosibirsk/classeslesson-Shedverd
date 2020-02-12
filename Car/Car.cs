@@ -10,8 +10,13 @@ namespace Car
     interface CarWeight { void Weihgt(float weight); }
     interface CarSpeed { void Speed(float speed); }
     interface CarAction { void Action(); }
-    class Car : CarColor, CarModel, CarWheels, CarWeight, CarSpeed
+    class Car : CarColor, CarModel, CarWheels, CarWeight, CarSpeed, CarAction
     {
+        public void Action()
+        {
+            Console.WriteLine("I am driving");
+        }
+
         public void Color(string color)
         {
             Console.WriteLine("My color is: " + color);
